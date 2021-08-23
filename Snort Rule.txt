@@ -1,0 +1,2 @@
+alert icmp any any -> any any ( msg:"DDOD:ICMP Flooding Detected";detection_filter:track by_src,count 100,seconds 1; sid:10000002;) 
+alert icmp any any -> any any (dsize: > 200; msg:"DDoS : Abnormal Data Packet detected"; sid:10000003;)
