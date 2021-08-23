@@ -21,4 +21,5 @@ Example as below:
 Sudo mn – custom ~/mininet/custom/mytopo1.py –topo custom –controller=remote, ip=192.168.16.4
   
 DDOS traffic was generated with Hping3 tool.
+This lab using hping3 <dest IP> --flood --icmp -d <packet size>
   
